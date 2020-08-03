@@ -24,7 +24,18 @@ class Counter extends React.Component {
         ))
         this.props.paraentDecrease()
       }
-    
+
+      componentWillReceiveProps= (nextProps) =>  {
+        if(this.props.count !== nextProps.count) {
+            this.setState((prevState) => (
+                {
+                    number : 0
+                }
+            ))
+        }
+        return null
+      }
+
       render() {
         return (
           <div>

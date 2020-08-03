@@ -57,7 +57,7 @@ class CounterGroup extends React.Component {
               </div>
               <div>
                 {new Array(this.state.count).fill(0).map(
-                  (value, index) => <Counter key = {index} parentIncrease={this.totalIncrease} paraentDecrease={this.totalDecrease}/>
+                  (value, index) => <Counter key = {index} parentIncrease={this.totalIncrease} paraentDecrease={this.totalDecrease} count={this.state.count}/>
                 )}
               </div>
           </div>
