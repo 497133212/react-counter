@@ -9,18 +9,6 @@ class CounterGroup extends React.Component {
         }; 
         this.handleChange = this.handleChange.bind(this)
     } 
-    
-    // handleChange(e){
-    //     let inputCount = 0;
-    //     let inputString = e.target.value
-    //     if(inputString != "") {
-    //         inputCount = parseInt(inputString)
-    //     }
-    //     this.setState({
-    //         count : inputCount
-    //     })
-    //     this.state.total = 0
-    // }
 
     handleChange = (event) => {
         let inputCount = 0;
