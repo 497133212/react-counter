@@ -5,14 +5,7 @@ class Counter extends React.Component {
         this.state = { 
             number: 0
         };
-        // this.increase = this.increase.bind(this)  
     }
-
-    //   increase() {
-    //     this.setState(prevState => ({
-    //         number : prevState.number + 1
-    //     }));
-    //   }
 
       increase= () =>  {
         this.setState((prevState) => (
