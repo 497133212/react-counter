@@ -13,6 +13,7 @@ class Counter extends React.Component {
                 number : prevState.number + 1
             }
         ))
+        this.props.parentIncrease()
       }
 
       decrease= () =>  {
@@ -21,6 +22,7 @@ class Counter extends React.Component {
                 number : prevState.number - 1 
             }
         ))
+        this.props.paraentDecrease()
       }
     
       render() {
